@@ -1,12 +1,17 @@
 import 'package:flash_chat_starting_project/screens/chat_screen.dart';
 import 'package:flash_chat_starting_project/screens/login_screen.dart';
 import 'package:flash_chat_starting_project/screens/registration_screen.dart';
-
 import 'constants.dart';
 import 'package:flutter/material.dart';
 import '/screens/welcome_screen.dart';
+import 'firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(FlashChat());
 }
 
