@@ -12,6 +12,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  print('User ${AuthService().getCurrentUser}');
   runApp(FlashChat());
 }
 
@@ -20,18 +21,24 @@ class FlashChat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: kBackgroundColor,
-      ),
-      routes:{
-        WelcomeScreen.id : (context) => WelcomeScreen(),
-        LoginScreen.id : (context) => LoginScreen(),
-        RegistrationScreen.id : (context) => RegistrationScreen(),
-        ChatScreen.id : (context) => ChatScreen(),
-      },
-      initialRoute: WelcomeScreen.id,
-    );
+    return StreamBuilder<User?>(
+        stream: AuthService().authStateChanges,
+        builder: (context, snapshot) {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData.dark().copyWith(
+              scaffoldBackgroundColor: kBackgroundColor,
+            ),
+            routes: {
+              WelcomeScreen.id: (context) => WelcomeScreen(),
+              LoginScreen.id: (context) => LoginScreen(),
+              RegistrationScreen.id: (context) => RegistrationScreen(),
+              ChatScreen.id: (context) => ChatScreen(),
+            },
+            home: AuthService().getCurrentUser != null
+                ? ChatScreen()
+                : WelcomeScreen(),
+          );
+        });
   }
 }
