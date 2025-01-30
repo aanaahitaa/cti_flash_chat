@@ -1,6 +1,6 @@
 {
-    "name": "cti_flash_chat_starting_project",
-    "short_name": "cti_flash_chat_starting_project",
+    "name": "flash_chat_starting_project",
+    "short_name": "flash_chat_starting_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

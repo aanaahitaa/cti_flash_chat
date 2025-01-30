@@ -19,7 +19,7 @@ void main() async {
 }
 
 class FlashChat extends StatelessWidget {
-  FlashChat({super.key});
+  const FlashChat({super.key});
 
   @override
   Widget build(BuildContext context) {

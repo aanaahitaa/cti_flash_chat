@@ -1,6 +1,5 @@
 import 'package:email_validator/email_validator.dart';
 import 'package:flash_chat_starting_project/components/rounded_button.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flash_chat_starting_project/screens/chat_screen.dart';
 import 'package:flash_chat_starting_project/services/auth_service.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
@@ -9,6 +8,8 @@ import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
   static const String id = 'login_screen';
+
+  const LoginScreen({super.key});
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
