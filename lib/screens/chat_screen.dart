@@ -93,10 +93,10 @@ class _ChatScreenState extends State<ChatScreen> {
 }
 
 class MessageStream extends StatelessWidget {
-  const   MessageStream({
+  const MessageStream({
     super.key,
     required FirebaseFirestore fireStore,
-  })  : _fireStore = fireStore;
+  }) : _fireStore = fireStore;
 
   final FirebaseFirestore _fireStore;
 

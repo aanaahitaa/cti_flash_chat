@@ -41,46 +41,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBF8S56Rc38YLKYZboK9hezrNmrodwuUbU',
-    appId: '1:836925497596:web:0c417643ab110cfb2fb779',
-    messagingSenderId: '836925497596',
-    projectId: 'flash-chat-14378',
-    authDomain: 'flash-chat-14378.firebaseapp.com',
-    storageBucket: 'flash-chat-14378.firebasestorage.app',
+      apiKey: "AIzaSyCudmdNsfAYhmLOgNvc6PzdKtUXhZlFQXc",
+      authDomain: "flash-chat-54078.firebaseapp.com",
+      projectId: "flash-chat-54078",
+      storageBucket: "flash-chat-54078.firebasestorage.app",
+      messagingSenderId: "917673730443",
+      appId: "1:917673730443:web:1ea93ccf6f7d25acdfcf8e"
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB5i3rSWiPTqFJjtK_i4VzbPFIzh0ituQU',
-    appId: '1:836925497596:android:c45d2aeec5ed76592fb779',
-    messagingSenderId: '836925497596',
-    projectId: 'flash-chat-14378',
-    storageBucket: 'flash-chat-14378.firebasestorage.app',
+      apiKey: "AIzaSyCudmdNsfAYhmLOgNvc6PzdKtUXhZlFQXc",
+      authDomain: "flash-chat-54078.firebaseapp.com",
+      projectId: "flash-chat-54078",
+      storageBucket: "flash-chat-54078.firebasestorage.app",
+      messagingSenderId: "917673730443",
+      appId: "1:917673730443:web:1ea93ccf6f7d25acdfcf8e"
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDLkb_ywUZlTzxLslrsrF7GAdB4hqtluQc',
-    appId: '1:836925497596:ios:c35a8e11e0618ebe2fb779',
-    messagingSenderId: '836925497596',
-    projectId: 'flash-chat-14378',
-    storageBucket: 'flash-chat-14378.firebasestorage.app',
-    iosBundleId: 'com.example.flashChatStartingProject',
+      apiKey: "AIzaSyCudmdNsfAYhmLOgNvc6PzdKtUXhZlFQXc",
+      authDomain: "flash-chat-54078.firebaseapp.com",
+      projectId: "flash-chat-54078",
+      storageBucket: "flash-chat-54078.firebasestorage.app",
+      messagingSenderId: "917673730443",
+      appId: "1:917673730443:web:1ea93ccf6f7d25acdfcf8e"
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDLkb_ywUZlTzxLslrsrF7GAdB4hqtluQc',
-    appId: '1:836925497596:ios:c35a8e11e0618ebe2fb779',
-    messagingSenderId: '836925497596',
-    projectId: 'flash-chat-14378',
-    storageBucket: 'flash-chat-14378.firebasestorage.app',
-    iosBundleId: 'com.example.flashChatStartingProject',
+      apiKey: "AIzaSyCudmdNsfAYhmLOgNvc6PzdKtUXhZlFQXc",
+      authDomain: "flash-chat-54078.firebaseapp.com",
+      projectId: "flash-chat-54078",
+      storageBucket: "flash-chat-54078.firebasestorage.app",
+      messagingSenderId: "917673730443",
+      appId: "1:917673730443:web:1ea93ccf6f7d25acdfcf8e"
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBF8S56Rc38YLKYZboK9hezrNmrodwuUbU',
-    appId: '1:836925497596:web:21a8600f59619a0f2fb779',
-    messagingSenderId: '836925497596',
-    projectId: 'flash-chat-14378',
-    authDomain: 'flash-chat-14378.firebaseapp.com',
-    storageBucket: 'flash-chat-14378.firebasestorage.app',
+      apiKey: "AIzaSyCudmdNsfAYhmLOgNvc6PzdKtUXhZlFQXc",
+      authDomain: "flash-chat-54078.firebaseapp.com",
+      projectId: "flash-chat-54078",
+      storageBucket: "flash-chat-54078.firebasestorage.app",
+      messagingSenderId: "917673730443",
+      appId: "1:917673730443:web:1ea93ccf6f7d25acdfcf8e"
   );
 }
